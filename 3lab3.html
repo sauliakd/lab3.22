@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сауляк Даря Юріївна - Персональний сайт</title>
+    <link rel="stylesheet" href="style.css"> <!-- Підключаємо зовнішній CSS файл -->
+</head>
+<body>
+    <header>
+        <h1>Персональна сторінка Сауляк Даря Юріївна</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ласкаво просимо на мій сайт!</h2>
+            <p>Цей сайт присвячений мені, моїм інтересам та освіті.</p>
+            <hr> <!-- Перша індивідуальна лінія -->
+            <p>Дізнайтеся більше про мене, переглянувши сторінки вище!</p>
+        </section>
+
+        <section class="clearfix">
+            <!-- Картинка котика зліва -->
+            <img src="https://preview.redd.it/wjmhopidkv871.jpg?auto=webp&s=d683c20553db134ca8f12e51cf7e80f31847bb73" alt="Картинка" class="cat-image">
+            <h2>Мої інтереси</h2>
+            <p>Я займаюся веброзробкою, дизайном і люблю вивчати нові технології.</p>
+            <hr> <!-- Друга індивідуальна лінія -->
+        </section>
+
+        <button>Дізнатися більше</button> <!-- Inline CSS видалено, стилі в external CSS -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Сауляк Даря Юріївна</p>
+    </footer>
+</body>
+</html>
+<style>/* Загальні стилі для всього тіла сторінки */
+    body {
+        font-family: 'Arial', sans-serif; /* Властивість font-family */
+        background-color: #fafafa; /* Світло-сірий фон */
+        color: #333; /* Властивість color */
+        margin: 0;
+        padding: 0;
+        line-height: 1.6; /* Властивість line-height */
+    }
+    
+    /* Стиль для заголовка h1 */
+    h1 {
+        background-color: #ffcccb; /* Ніжно-рожевий фон */
+        font-weight: bold; /* Властивість font-weight */
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-variant: small-caps; /* Властивість font-variant */
+        border-radius: 10px; /* Кутові відступи */
+    }
+    
+    /* Стиль для навігаційного меню */
+    nav {
+        margin-bottom: 20px; /* Відступ знизу */
+    }
+    
+    nav ul {
+        display: flex; /* Гнучке відображення */
+        justify-content: center; /* Центрування меню */
+        padding: 0;
+        list-style: none; /* Вимкнення маркерів списку */
+    }
+    
+    nav ul li {
+        margin: 0 15px; /* Відстань між кнопками */
+    }
+    
+    nav ul li a {
+        background-color: #ff69b4; /* Рожевий колір кнопки */
+        color: white;
+        padding: 10px 5px;
+        border-radius: 25px; /* Кутові відступи */
+        text-decoration: none; /* Без підкреслення */
+        font-weight: bold; /* Жирний текст */
+        transition: background-color 0.3s ease, transform 0.2s; /* Анімація */
+    }
+    
+    nav ul li a:hover {
+        background-color: #ff1493; /* Темно-рожевий колір при наведенні */
+        transform: scale(1.05); /* Збільшення кнопки */
+    }
+    
+    /* Стилізація секцій */
+    section {
+        background-color: #ffffff; /* Білий фон */
+        padding: 20px;
+        border-radius: 10px; /* Кутові відступи */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь */
+        margin-bottom: 30px; /* Відступ знизу */
+    }
+    
+    /* Стилізація для ліній */
+    hr {
+        border: none;
+        border-top: 3px dotted #ff69b4; /* Рожева лінія з точками */
+        width: 70%; /* Ширина лінії */
+        margin: 20px auto; /* Центрування */
+    }
+    
+    /* Стилізація для зображення котика */
+    .cat-image {
+        float: left; /* Плавання зліва */
+        margin-right: 20px; /* Відступ від тексту */
+        width: 250px; /* Властивість width */
+        height: auto; /* Властивість height */
+        border-radius: 10px; /* Кутові відступи */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь */
+    }
+    
+    /* Стилізація для футера */
+    footer {
+        background-color: #ff69b4; /* Рожевий фон футера */
+        color: white; /* Білий текст */
+        text-align: center; /* Центрування тексту */
+        padding: 7px; /* Відступи */
+        position: relative; /* Позиція */
+        bottom: 0; /* Внизу */
+        width: 100%; /* На всю ширину */
+        font-style: italic; /* Італік */
+    }
+    
+    /* Додаткові стилі для кнопки вмісту */
+    button {
+        background-color: #ff69b4; /* Рожевий фон кнопки */
+        color: white; /* Білий текст */
+        padding: 10px 20px; /* Відступи */
+        border: none; /* Без рамки */
+        border-radius: 25px; /* Кутові відступи */
+        cursor: pointer; /* Курсор при наведенні */
+        font-size: 16px; /* Розмір шрифту */
+        transition: background-color 0.3s ease, transform 0.2s; /* Анімація */
+    }
+    
+    button:hover {
+        background-color: #410e29; /* Темно-рожевий фон при наведенні */
+        transform: scale(1.05); /* Збільшення кнопки */
+    }    
+    </style>
